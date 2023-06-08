@@ -7,7 +7,7 @@ import GetBikeData as gb
 import haversine as hs
 from decimal import Decimal, ROUND_HALF_UP
 
-# bikeCSV = gb.GetBikeData()
+bikeCSV = gb.GetBikeData()
 @st.cache_data
 def get_data() -> pd.DataFrame:
     return pd.read_csv('BikeStations.csv')
